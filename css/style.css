@@ -17,3 +17,74 @@ body {
 .font-weight-black {
   font-weight: 900;
 }
+
+/* About 섹션의 이미지를 적당히 작고 반응형으로 표시합니다. 필요하면 max-width 값을 조정하세요. */
+#about img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/* Skills 섹션의 데스크탑 이미지를 적당히 작고 반응형으로 표시합니다. */
+#skills img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  text-align: center;
+  padding: 3rem 0;
+  font-weight: var(--font-weight-bold);
+}
+
+.footer__title {
+  font-size: 1.75rem;
+  margin-bottom: var(--spacing-4);
+}
+
+.footer__social {
+  margin-bottom: var(--spacing-4);
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+.footer__icon {
+  font-size: 1.2rem;
+}
+
+.footer__copy {
+  font-size: var(--font-size-6);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Floating Button */
+.floating-button {
+  position: fixed;
+  color: var(--white-color);
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: var(--box-shadow-1);
+  transition: 0.3s;
+}
+.floating-button:hover {
+  background-color: var(--dark-color);
+}
+
+.floating-button-icon {
+  font-size: 1.2rem;
+}
