@@ -299,6 +299,10 @@ body {
   background-color: #f6f6f6;
 }
 
+.bg-dark {
+  background-color: var(--dark-color);
+}
+
 /* About */
 .about__container {
   display: flex;
@@ -480,4 +484,8 @@ body {
 
 .floating-button-icon {
   font-size: 1.2rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }

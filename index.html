@@ -15,6 +15,9 @@
       src="https://kit.fontawesome.com/85fb97bb43.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://unpkg.com/typeit@8.8.7/dist/index.umd.js"></script>
 
     <title>짐코딩 포트폴리오</title>
   </head>
@@ -56,12 +59,7 @@
       <!-- Home -->
       <section class="home container" id="home">
         <div class="home__data">
-          <h2 class="home__title">
-            안녕하세요! <br />
-            <strong class="home__title-color">코딩 교육 크리에이터</strong>
-            <br />
-            <strong class="home__title-color">짐코딩</strong>입니다!
-          </h2>
+          <h2 id="typeit" class="home__title"></h2>
 
           <a href="#contact" class="button">Contact</a>
           <div class="home__social">
@@ -227,7 +225,7 @@
           <div>
             <img
               class="skills__img"
-              src="./images/skills/desktop.jpg"
+              src="./images/desktop.jpg"
               alt="데스크탑 이미지"
             />
           </div>
@@ -350,7 +348,7 @@
           </form>
         </div>
       </section>
-      <button class="floating-button" id="floatingButton">
+      <button class="floating-button" id="floating-button">
         <i class="fa-solid fa-arrow-up floating-button-icon"></i>
       </button>
     </main>
