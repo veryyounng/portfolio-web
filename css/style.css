@@ -82,7 +82,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--spacing-5) 0;
+  padding-top: var(--spacing-5);
+  padding-bottom: var(--spacing-5);
 }
 
 .home__title {
@@ -189,8 +190,51 @@ body {
   position: absolute;
 }
 
+.nav__toggle {
+  display: none;
+}
+.show {
+  right: 0 !important;
+}
+/* Mobile */
+@media only screen and (max-width: 768px) {
+  :root {
+    --font-size-1: 2rem;
+    --font-size-2: 1.75rem;
+    --font-size-3: 1.5rem;
+    --font-size-4: 1.25rem;
+    --font-size-5: 0.938rem;
+    --font-size-6: 0.75em;
+
+    --header-height: 3rem;
+  }
+  .nav__toggle {
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  .nav__menu {
+    position: fixed;
+    background-color: var(--dark-color);
+    height: 100%;
+    width: 80%;
+    top: var(--header-height);
+    right: -100%;
+    padding: 2rem;
+    transition: 0.2s;
+  }
+  .nav__list {
+    display: block;
+  }
+  .nav__item {
+    margin-left: 0;
+    margin-bottom: var(--spacing-4);
+  }
+}
+
 .section {
-  padding: calc(var(--header-height) + 1rem) 0;
+  padding-top: calc(var(--header-height) + 1rem);
+  padding-bottom: calc(var(--header-height) + 1rem);
 }
 .section__title {
   font-size: var(--font-size-3);
@@ -344,4 +388,56 @@ body {
 .contact__button {
   margin-left: auto;
   display: block;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  text-align: center;
+  padding: 3rem 0;
+  font-weight: var(--font-weight-bold);
+}
+
+.footer__title {
+  font-size: 1.75rem;
+  margin-bottom: var(--spacing-4);
+}
+
+.footer__social {
+  margin-bottom: var(--spacing-4);
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+.footer__icon {
+  font-size: 1.2rem;
+}
+
+.footer__copy {
+  font-size: var(--font-size-6);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Floating Button */
+.floating-button {
+  position: fixed;
+  color: var(--white-color);
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: var(--box-shadow-1);
+  transition: 0.3s;
+}
+.floating-button:hover {
+  background-color: var(--dark-color);
+}
+
+.floating-button-icon {
+  font-size: 1.2rem;
 }
