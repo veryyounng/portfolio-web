@@ -76,6 +76,6 @@ typeit
   .type('안녕하세요!<br/>')
   .type('<strong class="home__title-color">백엔드 개발자  </strong><br/>')
   .type('<strong class="home__title-color">Fairy</strong>', { delay: 300 })
-  .delete(6, { delay: 300 })
-  .type('<strong class="home__title-color">최소영</strong>입니다!')
+  .delete(5, { delay: 300 })
+  .type('<strong class="home__title-color">   최소영</strong>입니다!')
   .go();
