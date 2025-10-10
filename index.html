@@ -66,11 +66,9 @@
               <a href="#skills" class="nav__link">Skills</a>
             </li>
             <li class="nav__item">
-              <a href="#work" class="nav__link">Work</a>
+              <a href="#work" class="nav__link">Project</a>
             </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
-            </li>
+
           </ul>
         </div>
         <div class="nav__toggle" id="nav-toggle">
@@ -99,6 +97,15 @@
               title="최소영 깃헙 링크"
             >
               <i class="fa-brands fa-github home__social-icon"></i>
+            </a>
+             </a>
+
+            <a
+              href="https://amenable-cucumber-612.notion.site/2776f9b4e66180eaac4df0f69ed39390"
+              target="_blank"
+              title="최소영 포폴 링크"
+            >
+              <i class="fa-solid fa-book home__social-icon"></i>
             </a>
           </div>
          
@@ -385,7 +392,7 @@
       </section>
 
       <!-- Work -->
-      <section class="work section" id="work">
+      <!-- <section class="work section" id="work">
         <h2 class="section__title">Work</h2>
         <div class="work__container container">
           <a
@@ -442,67 +449,178 @@
             />
             <h3>방향 전환 공룡 게임</h3>
           </a>
-
-          <!-- <a
-            class="work__link"
-            href="https://www.gymcoding.co/courses/vue-firebase"
-            target="_blank"
-            title="Vue3 & Firebase 커뮤니티 풀스택 강의"
-          >
-            <img
-              class="work__img"
-              src="./images/work/vue-3-firebase.png"
-              alt="Vue3 & Firebase 커뮤니티 풀스택 강의"
-            />
-          </a>
-
-          <a
-            class="work__link"
-            href="https://www.gymcoding.co/courses/nuxt"
-            target="_blank"
-            title="Vue3 끝판왕 : Nuxt3 완벽 마스터"
-          >
-            <img
-              class="work__img"
-              src="./images/work/nuxt-3.png"
-              alt="Vue3 끝판왕 : Nuxt3 완벽 마스터"
-            />
-          </a> -->
-        </div>
-      </section>
-      <!-- Contact -->
-      <!-- <section class="contact section" id="contact">
-        <h2 class="section__title">Contact</h2>
-
-        <div class="contact__container container">
-          <form id="contactForm" class="contact__form">
-            <input
-              class="contact__input"
-              type="text"
-              name="name"
-              placeholder="이름"
-              required
-            />
-            <input
-              class="contact__input"
-              type="text"
-              name="subject"
-              placeholder="제목"
-              required
-            />
-            <textarea
-              class="contact__input"
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="내용"
-              required
-            ></textarea>
-            <button class="contact__button button">보내기</button>
-          </form>
         </div>
       </section> -->
+
+<section class="work section" id="work">
+  <h2 class="section__title">Project</h2>
+
+  <div class="work-pairs">
+      <!-- 1. 아파트 실거래가 -->
+      <div class="work-pair">
+        <a class="work-card" href="https://apt-trade-web.vercel.app/" target="_blank" rel="noopener">
+          <img src="./images/work4.png" alt="아파트 실거래가 조회 화면" />
+          <h3>아파트 실거래가 조회</h3>
+        </a>
+        <article>
+          <h3>아파트 실거래가 조회</h3>
+          <p>서울 열린데이터 API를 연동해 구/동/면적/금액 필터로 거래 내역을 조회하는 웹앱입니다.</p>
+          <p>React, TypeScript, 공공데이터 API</p>
+<br/>
+ <p>
+        <strong>CORS 정책 및 인증키 노출 이슈</strong>
+      </p>
+        Express Proxy 서버를 활용하여 서버가 대신 API를 호출하고, 응답은 JSON 형태로 프론트엔드에 전달하도록 구성했습니다.
+      </p>
+      <p>
+        Local에서는 정상 동작했지만, Vercel 배포 시 <strong>Timeout 오류</strong>가 발생했습니다.  
+        이는 Vercel이 일반 Express 서버를 지원하지 않고 <strong>서버리스 함수 구조</strong>로만 동작하기 때문이었습니다.
+      </p>
+      <p>
+        이후 Express 코드를 Vercel 서버리스 함수 형태로 수정하여 정상적으로 동작하도록 개선했습니다.
+      </p>
+          
+        </article>
+      </div>
+
+      <!-- 2. Kafka 리워드 -->
+      <div class="work-pair">
+        <a class="work-card" href="https://amenable-cucumber-612.notion.site/2776f9b4e66180eaac4df0f69ed39390?source=copy_link" target="_blank" rel="noopener">
+          <img src="./images/work1.png" alt="상품 공유 리워드 구현 화면" />
+          <h3>Kafka로 상품 공유 리워드 구현</h3>
+        </a>
+        <article id="kafka">
+          <h3>Kafka로 상품 공유 리워드 구현</h3>
+          <p>쇼핑몰 플랫폼에서 경험한 공유한 링크를 통해 리워드를 부여받는 시스템을 구축하였습니다.</p>
+          <p>Spring Boot, Kafka, Docker Compose, React, TypeScript</p>
+
+  <p>
+    <a  class="button" href="https://amenable-cucumber-612.notion.site/2776f9b4e66180eaac4df0f69ed39390?source=copy_link" target="_blank" rel="noopener">설명 문서</a>
+  </p>
+
+  <!-- 추가 섹션: Kafka 메시지 처리 흐름 및 장애 대응 설계 -->
+   <br />
+  <h4><strong>Kafka 메시지 처리 흐름 및 장애 대응 설계</strong></h4>
+  <p>Kafka를 통해 <code>share.created.v1</code> → <code>reward.granted.v1</code> 이벤트로 메시지를 비동기 처리하는 구조를 직접 설계하고 구현했습니다.</p>
+  <ul>
+    <li><strong>토픽 설계 전략</strong>: share 관련 이벤트와 reward 관련 이벤트를 명확히 분리하여 서비스 간 관심사 분리</li>
+    <li><strong>중복 이벤트 방지</strong>: Consumer 측에서 <code>eventId</code> 기준으로 중복 여부를 체크하고 InMemoryStore로 관리</li>
+    <li><strong>에러 대응 설계 고려</strong>: <code>whenComplete</code> 구문을 활용해 Kafka 전송 실패 시 로깅 및 메시지 실패 감지</li>
+    <li><strong>Consumer 그룹 사용</strong>: <code>groupId</code>를 활용해 하나의 메시지를 한 서비스에서만 소비하도록 설정</li>
+    <li><strong>지연 응답 이슈 트러블슈팅</strong>: Kafka 전송 완료 후 응답을 반환하도록 구현되어 API 응답이 느려지는 문제를 직접 디버깅하고 개선 방향 도출</li>
+  </ul>
+
+  <!-- 추가 섹션: POST 지연 원인/개선 -->
+   <br />
+  <h4><strong>POST 요청 지연 원인 파악 및 개선 경험</strong></h4>
+  <p>
+    API 요청 시 <code>POST /api/shares</code>의 응답 지연 이슈가 발생했으며,
+    이는 Kafka 프로듀서 전송 이후 응답을 기다리는 <em>블로킹</em> 방식이 원인이었습니다.
+    추후에는 Kafka 전송을 <strong>비동기 처리</strong>하거나, <strong>Acknowledgement 전략</strong>을 조정하여 응답 속도를 개선하였습니다.
+  </p>
+
+  <!-- 이미지 2장: 나란히 보여주기 -->
+  <div class="work-figures">
+    <figure>
+      <img src="./images/ka1.png" alt="Kafka 이벤트 흐름 다이어그램 1" />
+      <figcaption class="fig-caption">서비스 아키텍쳐 구성</figcaption>
+    </figure>
+    <figure>
+      <img src="./images/ka2.png" alt="Kafka 장애 대응/재시도 설계" />
+      <figcaption class="fig-caption">공유 이벤트 흐름</figcaption>
+    </figure>
+  </div>
+</article>
+
+  </div>
+      <!-- 3. TicTacToe -->
+      <div class="work-pair">
+        <a class="work-card" href="https://disosaur-game.vercel.app/" target="_blank" rel="noopener">
+          <img src="./images/work2.png" alt="TicTacToe 미니 게임 화면" />
+          <h3>TicTacToe 미니 게임</h3>
+        </a>
+        <article id="tictactoe">
+  <h3>TicTacToe 미니 게임</h3>
+  <p>
+    승/무/패 카운트와 리셋 기능을 제공하는 미니 게임입니다.
+    </p>
+    <p>행렬 연산과 탐색 알고리즘을 적용하여 논리적 사고력과 알고리즘 설계를 강조했습니다.</p>
+
+  <h4><strong>(1) 행렬/벡터 기반 보드 표현</strong></h4>
+  <ul>
+    <li>보드는 2차원 배열(3×3 행렬)로 표현 가능하지만, 성능과 단순화를 위해 1차원 배열(길이 9)을 사용했습니다.</li>
+    <li>
+      인덱스를 좌표계(행, 열)로 변환하는 과정에서 선형대수학적 사고
+      (<em>행렬 인덱스 변환, 좌표 매핑</em>)를 적용했습니다.
+    </li>
+    <li><code>board[i][j]  ↔  board[i*3 + j]</code></li>
+  </ul>
+
+  <h4><strong>(2) 승리 조건 탐색</strong></h4>
+  <p>
+    가로, 세로, 대각선의 승리 조건을 벡터의 합/곱 개념으로 일반화하여,
+    <strong>"세 칸의 합이 모두 같은 플레이어일 때 승리"</strong>라는 규칙을
+    행렬 연산 → 탐색 알고리즘 형태로 해석했습니다.
+  </p>
+
+  <h4><strong>(3) AI 알고리즘 (Minimax)</strong></h4>
+  <p>
+    플레이어의 모든 선택지를 재귀적으로 탐색하며 최적의 수를 찾는 <strong>Minimax 알고리즘</strong>을 적용했습니다.
+    이는 수학적으로 트리 탐색(DFS)과 게임이론의 <em>minimax 함수</em> 개념을 활용한 것입니다.
+  </p>
+  <p>
+    휴리스틱 함수로 승리 시 +10, 패배 시 −10, 무승부는 0을 부여하여 점수를 계산하는
+    <strong>Utility Function</strong>을 정의했습니다.
+  </p>
+</article>
+
+      </div>
+      <!-- 4. 방향 전환 공룡 -->
+      <div class="work-pair">
+        <a class="work-card" href="https://disosaur-game.vercel.app/" target="_blank" rel="noopener">
+          <img src="./images/work3.png" alt="방향 전환 공룡 게임 화면" />
+          <h3>방향 전환 공룡 게임</h3>
+        </a>
+        <article id="dino">
+  <h3>방향 전환 공룡 게임</h3>
+  <p>
+    방향 전환 수학과 상태 전이 원리를 체화하기 위해 직접 구현한 2D 시뮬레이션 미니 게임입니다.
+  </p>
+
+  <h4><strong>개발 동기</strong></h4>
+  <p>
+    백준 <code>3190</code> ‘뱀’ 문제의 유사 로직을 직접 구현하면서, 
+    <strong>방향 전환의 수학적 개념</strong>과 <strong>상태 전이 구조</strong>를 
+    게임 로직 속에 녹여냈습니다.
+  </p>
+
+  <h4><strong>설계와 수학적 원리</strong></h4>
+
+  <h5>(1) 보드 모델링 (행렬/벡터)</h5>
+  <ul>
+    <li>개념적으로는 2D 행렬 <code>N×N</code>, 구현은 단순화를 위해 1D 인덱스로 투영</li>
+    <li>좌표 → 인덱스 변환 수식: <code>idx = y * N + x</code></li>
+  </ul>
+
+  <h5>(2) 방향 벡터 & 회전</h5>
+  <ul>
+    <li>이동 수식: <code>p_next = p_current + d</code></li>
+    <li>
+      회전은 두 가지 방식으로 구현 가능  
+      - 행렬 회전: <code>d' = R(θ)·d</code>  
+      - 테이블 회전: <code>Direction[i] → Direction[(i±1) mod 4]</code>
+    </li>
+    <li>
+      충돌 판정: 벽이나 자기 몸집 좌표를 <code>Set</code>으로 저장하고, 
+      <code>p_next</code>가 해당 집합에 포함되면 충돌로 처리
+    </li>
+  </ul>
+</article>
+      </div>
+
+    </div>
+</section>
+
       <button class="floating-button" id="floating-button">
         <i class="fa-solid fa-arrow-up floating-button-icon"></i>
       </button>
