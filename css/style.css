@@ -137,8 +137,8 @@ body {
 
 /* Header */
 .header {
-  background-color: var(--dark-color);
-  color: var(--white-color);
+  background-color: #f1fb7a;
+  color: var(--grey-color);
   position: fixed;
   top: 0;
   left: 0;
@@ -217,7 +217,7 @@ body {
   }
   .nav__menu {
     position: fixed;
-    background-color: var(--dark-color);
+    background-color: #f1fb7a;
     height: 100%;
     width: 80%;
     top: var(--header-height);
@@ -438,8 +438,8 @@ body {
 
 /* Footer */
 .footer {
-  background-color: var(--dark-color);
-  color: var(--white-color);
+  background-color: #f1fb7a;
+  color: var(--grey-color);
   text-align: center;
   padding: 3rem 0;
   font-weight: var(--font-weight-bold);
